@@ -12,7 +12,7 @@ export const ICAL = {
       json = {
         VCALENDAR: {
           VERSION: "2.0",
-          PRODID: "https://github.com/code4fukui/ICAL.js",
+          PRODID: "https://github.com/code4fukui/ICAL/",
           VEVENT: json,
         }
       };
