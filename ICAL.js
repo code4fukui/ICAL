@@ -22,6 +22,8 @@ export const ICAL = {
       if (typeof o == "string") {
         if (name == "DTSTART" || name == "DTEND") {
           o = todt(new DateTime(o));
+        } else {
+          o = o.replace(/\n/g, "\\\\n");
         }
         ss.push(`${name}:${o}`);
       } else if (o instanceof DateTime) {
@@ -41,7 +43,7 @@ export const ICAL = {
     for (const name in json) {
       tos(name, json[name]);
     }
-    return ss.join("\r\n");
+    return ss.join("\r\n") + "\r\n";
   },
   parse: (s) => {
     throw new Error("not supported yet");
