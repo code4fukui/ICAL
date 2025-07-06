@@ -23,7 +23,7 @@ export const ICAL = {
         if (name == "DTSTART" || name == "DTEND") {
           o = todt(new DateTime(o));
         } else {
-          o = o.replace(/\n/g, "\\\\n");
+          o = o.replace(/\n/g, "\\n");
         }
         ss.push(`${name}:${o}`);
       } else if (o instanceof DateTime) {

@@ -10,7 +10,7 @@ Deno.test("simple", () => {
 VERSION:2.0\r
 PRODID:https://github.com/code4fukui/ICAL/\r
 BEGIN:VEVENT\r
-DESCRPTION:a\\\\nb\r
+DESCRPTION:a\\nb\r
 END:VEVENT\r
 END:VCALENDAR\r
 `);
