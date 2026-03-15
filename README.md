@@ -1,5 +1,9 @@
 # ICAL - iCalendar for JavaScript
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
+ICAL is a JavaScript library for creating and managing iCalendar format calendar data.
+
 ## Usage
 
 ### CLI
