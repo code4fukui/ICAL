@@ -1,25 +1,27 @@
 # ICAL - iCalendar for JavaScript
 
-## Usage
+iCalendar形式のカレンダーデータを作成・管理するJavaScriptライブラリです。
 
-### CLI
+## 使い方
+
+### コマンドラインツール
 
 ```sh
-deno run -A https://code4fukui.github.io/ICAL/csv2ical.js [fn]
+deno run -A https://code4fukui.github.io/ICAL/csv2ical.js [ファイル名]
 ```
 
-### lib
+### ライブラリ
 
 ```js
 import { ICAL } from "https://code4fukui.github.io/ICAL/ICAL.js";
 
 const data = [
-  { "DTSTART": "20240130T00:00+09:00", SUMMARY: "test" },
+  { "DTSTART": "20240130T00:00+09:00", SUMMARY: "テスト" },
 ];
 console.log(ICAL.stringify(data));
 ```
 
-## Sample
+## サンプル
 
 ```
 BEGIN:VCALENDAR
@@ -33,6 +35,6 @@ END:VEVENT
 END:VCALENDAR
 ```
 
-## License
+## ライセンス
 
 MIT License
