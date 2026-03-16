@@ -1,6 +1,6 @@
-# ICAL - iCalendar for JavaScript
+# ICAL - iCalendarのJavaScript実装
 
-iCalendar形式のカレンダーデータを作成・管理するJavaScriptライブラリです。
+このプロジェクトは、iCalendar形式のカレンダーデータを作成・管理するためのJavaScriptライブラリです。
 
 ## 使い方
 
